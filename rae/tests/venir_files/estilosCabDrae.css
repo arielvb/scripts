@@ -1,0 +1,30 @@
+/************************************************* R A E ***************
+ Estilos para la cabecera del DRAE cuando se hace una petición externa.
+ Copiados de estilos.css
+************************************************************************/
+.barra {
+	border-bottom: thin solid #ECEAEF;
+}
+
+.rmay {
+	font-family: Times New Roman;
+	font-size: 28px;
+	font-weight: normal;
+	color: #ffffff;
+	text-decoration: none
+}
+
+.realt {
+	font-family: Times New Roman;
+	font-size: 18px;
+	font-weight: normal;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.texto {
+	font-size: 13px;
+	color: #292A2E;
+	text-align: justify;
+	line-height: 125%
+}

@@ -1,0 +1,24 @@
+body       	{ text-align: left;
+	     	  font-size: 13pt }
+tr         	{ text-align: left;
+	     	  font-size: 13pt;
+	     	  white-space: normal }
+td         	{ text-align: left;
+	     	  font-size: 13pt;
+	     	  white-space: normal }
+.eLema     	{ color: #0000FF; 	
+	     	  font-size: 15pt }
+.eAbrv     	{ color: #0000FF }
+.eAbrvNoEdit 	{ color: #B3B3B3 }
+.eGenero     	{ color: #0000FF;
+		  font-size: 15pt }
+.eEtimo      	{ color: #008000; 
+		  font-size: 13pt }
+.eAcep       	{ color: #000000 }
+.eEjemplo    	{ color: #800080 }
+.eFCompleja  	{ color: #800000 }
+.eOrtografia 	{ color: #000000 }
+.eMorfologia 	{ color: #000000 }
+.eOrdenAcepLema	{ color: #0000FF }
+.eOrdenAcepFC 	{ color: #800000 }
+.eRefLema     	{ color: #FF0000 }

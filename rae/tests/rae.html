@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="google-site-verification" content="3cuWRHKx8B9xm0GalG0IZzLzmg0-LqtEe_2Xnl4ITKs" />
+<meta name="author" content="Real Academia Espa&#241;ola" />
+<meta name="description" content="Instituci&#243;n espa&#241;ola especializada en lexicograf&#237;a, gram&#225;tica, ortograf&#237;a y bases de datos lingü&#237;sticas. Productora del diccionario de referencia de la lengua espa&#241;ola. Spanish Institution specialized in lexicography, grammar, spelling and linguistic data bases. Producer of the spanish language reference dictionary" />
+<meta name="keywords" content="espa&#241;ol espanol, espa&#241;ola, espanola, diccionario, dictionary, lengua, language, ortograf&#237;a, ortography, gram&#225;tica, grammatic, lexicograf&#237;a, lexicography, corpus, lingü&#237;stica, linguistics, spanish, dictionaries, Espa&#241;a, Spain, DRAE, DPD, panhisp&#225;nico, dudas, hist&#243;rico, estudiante, esencial, pr&#225;ctico, academia, academy, acad&#233;mico, academic" />
+<meta name="Language" content="espa&#241;ol" />
+<meta name="revisit" content="1 days" />
+<meta name="robots" content="all,index, follow" />
+<title>Real Academia Espa&#241;ola</title>
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://www.rae.es/Imagenes/graficos.nsf/recursos/CSS*general_text/$File/general_text.css" />
+
+<!-- cambio dinamico de imagen background (cambia CSS) si la resolucion de pantalla es mayor de 800x600 -->
+
+<script type="text/javascript">
+//<![CDATA[
+if (screen.width>800){document.write('<link rel="stylesheet" type="text/css" href="style2.css" />')}
+//]]>
+</script>
+<script type="text/javascript">
+<!--
+function submitenter(myfield,e,diccionario)
+{
+var keycode;
+if (window.event) keycode = window.event.keyCode;
+else if (e) keycode = e.which;
+else return true;
+
+if (keycode == 13)
+{
+	if (document.all) {
+		var fb = document.forms[0];
+	} else {
+		if (document.layers) {
+			var fb = document.busqueda.document.forms[0];
+		} else {
+			var fb = document.forms[0];
+		}
+	}
+	var lema1, lema2;
+	lema1=fb.LEMA.value;
+	lema2=fb.DPD.value;
+
+	if ((lema1 == "") && (lema2 == ""))
+		alert("Por favor, escriba la palabra que desea consultar")
+
+	if ((lema1 != "") && (lema2 != ""))
+		sitebusca(diccionario);
+	
+	if ((lema1 != "") && (lema2 == ""))
+		sitebusca('DRAE');
+	
+	if ((lema1 == "") && (lema2 != ""))
+		sitebusca('DPD');
+	return false;
+}
+else
+	return true;
+}
+//-->
+</script>
+<script language="JavaScript" type="text/javascript">
+<!--
+function sitebusca(diccionario){
+if (document.all) {
+	var fb = document.forms[0];
+} else {
+	if (document.layers) {
+		var fb = document.busqueda.document.forms[0];
+	} else {
+		var fb = document.forms[0];
+	}
+}
+var lema;
+if (diccionario == "DRAE")
+	lema =fb.LEMA.value;
+else
+	lema =fb.DPD.value;
+
+if (lema != "") {
+	if (diccionario == "DRAE"){
+		window.open("http://buscon.rae.es/draeI/SrvltConsulta?TIPO_BUS=3&LEMA="+lema,"_self");
+		fb.LEMA.value="";
+	}
+	else {
+		window.open("http://buscon.rae.es/dpdI/SrvltConsulta?lema="+lema,"_self");
+		fb.DPD.value="";
+	}
+}else{
+	alert("Por favor, escriba la palabra que desea consultar")
+	}
+}
+// -->
+</script>
+</head>
+<body lang="ES" title="Real Academia Espa&#241;ola" onload="document.forms[0].LEMA.focus()">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="9%" rowspan="2" bgcolor="#990000" class="barra"><img height="100" alt="Real Academia Espa&#241;ola" src="images/logotop.png" width="110" border="0" /></td>
+    <td width="91%" height="80" valign="bottom" bgcolor="#272763" ></td>
+  </tr>
+  <tr>
+    <td bgcolor="#9bb9f1" class="barra">
+        <table width="660"  border="0" cellpadding="0" cellspacing="3" align="right" class="fcolmenu">
+          <tr align="right">
+            <td>
+            </td>
+          </tr>
+        </table>
+      </td>
+  </tr>
+</table>
+<div id="Layer1" class="rmay" style="Z-INDEX: 1; LEFT: 66px; WIDTH: 44px; POSITION: absolute; TOP: 23px; HEIGHT: 27px">
+  <div align="right">R</div>
+</div>
+<div id="Layer2" class="realt" style="Z-INDEX: 2; LEFT: 110px; WIDTH: 500px; POSITION: absolute; TOP: 23px; HEIGHT: 21px">EAL
+  <span class="rmay">A</span>CADEMIA <span class="rmay">E</span>SPA&#209;OLA</div>
+
+<div id="centrado"><p><font size="3"><a href="http://www.rae.es/rae/gestores/gespub000001.nsf/voTodosporId/4F34A4D521080642C12576C5003D16DE?OpenDocument" target="_blank">Aviso legal</a></font></p></div>
+<div style="CLEAR: both"></div>
+<div id="name">&#160;</div>
+
+<div id="center" style="WIDTH: 260px; HEIGHT: 89px">
+<div id="menu">
+<p><a href="http://www.rae.es/RAE/Noticias.nsf/Home?ReadForm" title="Acceso a la p&#225;gina web de la Real Academia Espa&#241;ola"><font size="3">Real Academia Espa&#241;ola</font></a></p>
+<p><a href="http://asale.org/ASALE/asale.html" title="Acceso a la p&#225;gina web de la Asociaci&#243;n de Academias de la Lengua Espa&#241;ola"><font size="3">Asociaci&#243;n de
+Academias de la Lengua Espa&#241;ola</font></a></p>
+<p><a href="http://www.fprorae.es" title="Acceso a la p&#225;gina web de la Fundación pro Real Academia Española"><font size="3">Fundaci&oacute;n pro Real Academia Espa&ntilde;ola</font></a></p>
+</div>
+</div>
+
+<div id="right" style="WIDTH: 360px; HEIGHT: 168px">
+
+	 <form onsubmit="distribuye();" action="">
+	 
+	 <h1 class="storytitle" title="Consulte la vig&#233;sima segunda edici&#243;n del Diccionario de la lengua espa&#241;ola (http://drae.rae.es)"><font color="#004080" size="3">Diccionario
+de la lengua espa&#241;ola</font>       </h1>
+
+	 <h1 class="storytitle" title="Consulte la vig&#233;sima segunda edici&#243;n del Diccionario de la lengua espa&#241;ola (http://drae.rae.es)"> <font size="2"><font color="#800000">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+Vig&#233;sima segunda edici&#243;n</font></font></h1>
+<p class="storytitle">&#160;<a href="http://drae.rae.es"><img style="width: 21px; height: 30px" height="60" alt ="Diccionario de la lengua espa&#241;ola. Vig&#233;sima segunda edici&#243;n." hspace="0" src="images/image002.gif" width="47" border="0" /></a>&#160; <input type="text" name="LEMA" style="WIDTH: 155px; HEIGHT: 24px" title="Escriba aqu&#237; la palabra que desea consultar" onkeypress="return submitenter(this,event,'DRAE')"/>&#160;<img height="20" alt="Pulse sobre la flecha para realizar la consulta" hspace="0" src="images/iconRtArrow_20x20.gif" width="20" border="0" onclick="sitebusca('DRAE'); return false;"/></p>
+<p class="storytitle">&#160;</p>
+
+	 <h1 class="storytitle" title="Consulte la primera edici&#243;n del Diccionario panhisp&#225;nico de dudas (http://dpd.rae.es)"><font color="#004080" size="3">Diccionario
+panhisp&#225;nico de dudas</font>       </h1>
+
+	 <h1 class="storytitle" title="Consulte la primera edici&#243;n del Diccionario panhisp&#225;nico de dudas (http://dpd.rae.es)"><font color="#004080" size="3">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+</font> <font color="#800000" size="2">Primera edici&#243;n</font>     </h1>
+<p class="storytitle">&#160;<a href="http://dpd.rae.es"><img style="WIDTH: 21px; HEIGHT: 30px"
+ height="48" alt="Diccionario panhisp&#225;nico de dudas. Primera edici&#243;n." hspace="0" src="images/panhis.gif" width="33" border="0" /></a>&#160; <input name="DPD" style="WIDTH:155px; HEIGHT:24px" title="Escriba aqu&#237; la palabra que desea consultar" onkeypress="return submitenter(this,event,'DPD')"/>&#160;<img height="20" alt="Pulse sobre la flecha para realizar la consulta" hspace="0" src="images/iconRtArrow_20x20.gif" width="20" border="0" onclick="sitebusca('DPD'); return false;"/></p>
+<p class="storytitle">&#160;</p>
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table width="250"><tr><td align="center"><a href="http://youtube.com/elquijote" title="Lectura del Quijote" target="_blank"><img src="images/QuijoteG.gif" border="0" alt="Participa en la lectura global del Quijote"/></a></td></tr><tr><td>
+<a href="http://youtube.com/elquijote" title="Lectura del Quijote" target="_blank"><b>Participa en la lectura global del <i>Quijote</i></b></a></td></tr></table>
+
+
+	 </form>
+
+	 </div>
+	 </body>
+</html>
