@@ -23,4 +23,8 @@ if [[ ($1 == 'on') && ($CURRENT == "") ]]; then
 elif [[ ($1 == 'off') && ($CURRENT) ]]; then
 	networksetup -setairportpower Airport off
 	echo 'Wifi off'
+elif [[ ($1 == 'reset') ]]; then
+	networksetup -setairportpower Airport off
+        networksetup -setairportpower Airport on
+	echo 'Wifi reset'
 fi
