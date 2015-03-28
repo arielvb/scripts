@@ -22,7 +22,7 @@
 # --------------------------
 
 o(){ # open current dir if no args or open arg $1
-    local runner="gnome-open"
+    local runner="xdg-open"
     if [[ 'Darwin' == `uname` ]]; then
         runner="open"
     fi
