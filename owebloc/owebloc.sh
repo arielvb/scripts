@@ -44,10 +44,10 @@ fi
 
 # OS Detection via OSTYPE declaration, maybe a better way is using `uname -a` 
 WWW="echo (error) No browser found for:"
-if [[ $OSTYPE == "darwin10.0" ]]; then # MacOsX
+if [[ $OSTYPE == darwin* ]]; then # MacOsX
 	WWW="open -a $BROWSER"
 fi
-if [[ $OSTYPE == "linux-gnu" ]]; then # Linux
+if [[ $OSTYPE == *linux* ]]; then # Linux
 	WWW="$BROWSER"
 fi
 
