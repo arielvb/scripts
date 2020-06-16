@@ -8,7 +8,8 @@
 # Changelog:
 #	0.1 first version
 #######################################################################
-CURRENT=`networksetup -getairportpower Airport | grep On`;
+DEVICENAME=en0
+CURRENT=`networksetup -getairportpower $DEVICENAME | grep On`;
 if [[ $BASH_ARGC < 0 ]]; then
 	if [[ $CURRENT ]]; then
 		echo 'Status: on'
@@ -18,13 +19,13 @@ if [[ $BASH_ARGC < 0 ]]; then
 	exit
 fi
 if [[ ($1 == 'on') && ($CURRENT == "") ]]; then
-	networksetup -setairportpower Airport on
+	networksetup -setairportpower $DEVICENAME on
 	echo 'Wifi on'
 elif [[ ($1 == 'off') && ($CURRENT) ]]; then
-	networksetup -setairportpower Airport off
+	networksetup -setairportpower $DEVICENAME off
 	echo 'Wifi off'
 elif [[ ($1 == 'reset') ]]; then
-	networksetup -setairportpower Airport off
-        networksetup -setairportpower Airport on
+	networksetup -setairportpower $DEVICENAME off
+        networksetup -setairportpower $DEVICENAME on
 	echo 'Wifi reset'
 fi
