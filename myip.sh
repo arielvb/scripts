@@ -1,7 +1,6 @@
 #!/bin/bash
-# Prints de current ip v4 on mac os x
-# An option is:
-#  networksetup -getinfo airport | grep 'IP address:' | head -1
-# the shorter:
-ipconfig getifaddr en1
-dig +short myip.opendns.com @resolver1.opendns.com
+# Prints all network IP and the public IP (MACOS only)
+for i in $(seq 0 $(ipconfig ifcount)); do
+	echo "en$i: $(ipconfig getifaddr en$i)"
+done
+echo "Public IP: $(dig +short myip.opendns.com @resolver1.opendns.com)"
